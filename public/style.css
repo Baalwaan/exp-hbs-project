@@ -1,2 +1,23 @@
 body {
+  background: yellow;
+  font-family: Verdana;
+}
+
+form {
+  margin: 50px auto;
+  /* width: 25em
+  ; */
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: right;
+  width: 35em;
+}
+
+button {
+  width: 10vw;
+  margin: 10px auto;
 }

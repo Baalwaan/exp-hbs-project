@@ -1,6 +1,18 @@
 <form>
     <label for="name">Name: <input type="text" name="name" id="name"></label>
+
     <label for="gym-name">What gym you train at ? <input type="text" name="gym" id="gym-name"></label>
-    <label for="duration">How long is your workout ? <input type="text" name="name" id="duration"></label>
+    <label for="duration">How long is your workout ?
+        <input list="duration">
+        <datalist id="duration">
+            <option value="">
+            <option value="30-45 Min">
+            <option value="45-60 Min">
+            <option value="1Hr-1.5Hr">
+            <option value="over 1.5Hr">
+
+        </datalist></label>
     <label for="fav-exercise">What is your favourite exercise: <input type="text" name="name" id="fav-exercise"></label>
+
+    <button type="submit">Submit</button>
 </form>
