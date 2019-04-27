@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "go": "nodemon ./src/index.js"
+    "go": "nodemon ./src/index.js",
+    "dbbuild": "NODE_ENV=build node src/model/dbbuild.js"
   },
   "repository": {
     "type": "git",
@@ -18,14 +19,16 @@
   },
   "homepage": "https://github.com/Baalwaan/exp-hbs-project#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "env2": "^2.2.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "nodemon": "^1.18.11",
-    "pg": "^7.10.0"
+    "express-session": "^1.16.1",
+    "pg": "^7.10.0",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
+    "nodemon": "^1.18.11",
+    "supertest": "^4.0.2",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.1"
   }
