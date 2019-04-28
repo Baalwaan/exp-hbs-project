@@ -7,7 +7,7 @@ const controllers = require("./controllers/index");
 const app = express();
 
 //come back to this when deploying to heroku
-app.set("port", 3000);
+app.set("port", process.env.PORT || 3000);
 
 app.use(controllers);
 
