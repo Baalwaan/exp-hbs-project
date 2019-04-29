@@ -1,0 +1,19 @@
+<h1>Hey {{name}}, here is your feedback history</h1>
+
+
+<br>
+{{#if arr}}
+{{#each arr}}
+<ul>
+
+    <li>id: {{id}}</li>
+    <li>Gym: {{gym_name}}</li>
+    <li>Duration: {{workout_duration}}</li>
+    <li>Favourite exercise: {{favourite_workout}}</li>
+</ul>
+{{/each}}
+
+{{else}}
+
+<p>You have no feedback history</p>
+{{/if}}

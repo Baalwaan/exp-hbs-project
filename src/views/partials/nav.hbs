@@ -1,2 +1,5 @@
 <a href="/">Home</a>
-<a>Register</a>
+{{#if home}}
+{{else}}
+<a href="/feedbackhistory/{{name}}">My Feedback History</a>
+{{/if}}
