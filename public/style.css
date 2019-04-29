@@ -21,3 +21,7 @@ button {
   width: 10vw;
   margin: 10px auto;
 }
+
+.page-title {
+  text-align: center;
+}
