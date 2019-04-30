@@ -1,9 +1,9 @@
 <form action="/feedback" method="POST">
-    <label for="name">Name: <input type="text" name="name" id="name"></label>
+    <label for="name">Name: <input type="text" name="name" id="name" required></label>
 
-    <label for="gym-name">What gym you train at ? <input type="text" name="gym" id="gym-name"></label>
+    <label for="gym-name">What gym you train at ? <input type="text" name="gym" id="gym-name" required></label>
     <label for="duration">How long is your workout ?
-        <input list="duration" name="duration">
+        <input list="duration" name="duration" required>
         <datalist id="duration">
             <option value="">
             <option value="Short">
@@ -12,7 +12,8 @@
             <option value="Really long">
 
         </datalist></label>
-    <label for="exercise">What is your favourite exercise: <input type="text" name="exercise" id="exercise"></label>
+    <label for="exercise">What is your favourite exercise: <input type="text" name="exercise" id="exercise"
+            required></label>
 
     <button type="submit">Submit</button>
 </form>
