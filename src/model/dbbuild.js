@@ -23,3 +23,5 @@ runDbBuild()
   .catch(err => {
     process.stdout.write("build failed");
   });
+
+module.exports = runDbBuild;
