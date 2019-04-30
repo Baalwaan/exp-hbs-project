@@ -6,12 +6,12 @@ const router = express.Router();
 const home = require("./home");
 const feedback = require("./feedback");
 const feedbackHistory = require("./feedbackhistory");
-const error = require("./deletefeedback.js");
+// const deleteFeedback = require("./deletefeedback.js");
 const error = require("./error.js");
 
 router.get("/", home);
 router.get("/feedbackhistory/:name", feedbackHistory);
-router.get("/delete/:name", deleteFeedback);
+// router.get("/delete/:id", deleteFeedback);
 router.post("/feedback", feedback);
 
 module.exports = router;
