@@ -4,6 +4,7 @@ body {
   color: #cef282;
 }
 
+/* partials */
 nav {
   background: #383f51;
   display: flex;
@@ -11,13 +12,18 @@ nav {
   text-align: center;
 }
 
+header {
+  text-align: center;
+}
+
 main {
   min-width: 250px;
   border: solid black 5px;
+  text-align: center;
 }
 
-img {
-  height: 1.2em;
+footer {
+  padding-top: 1em;
 }
 
 a {
@@ -29,17 +35,28 @@ a:hover {
   color: #cef282;
 }
 
+img {
+  height: 1.3em;
+}
+
+p img:hover {
+  transform: scale(1.1);
+}
+
+/* home page */
+
 form {
-  margin: 50px auto;
-  /* border: solid black 1px; */
+  /* margin: auto; */
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  /* text-align: center; */
 }
 
 label {
-  text-align: right;
-  width: 35em;
+  margin-bottom: 5px;
 }
+
 input[type="text"] {
   border: 0;
   outline: 0;
@@ -64,31 +81,30 @@ input[list] {
 input:hover,
 input:valid {
   border-bottom: 1px solid #cef282;
-  color: #cef282;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
 }
 
-/* input[list],
-input[type="text"]:after {
-  border-bottom: 1px solid #cef282;
-} */
+input,
+label {
+  margin-bottom: 5px;
+}
 
 button {
-  width: 10vw;
+  min-width: 10vw;
   margin: 10px auto;
-}
-
-header {
-  text-align: center;
-}
-
-footer {
-  padding-top: 1em;
-}
-
-p img:hover {
-  transform: scale(1.1);
+  padding: 3px;
 }
 
 h1 {
   color: #cef282;
+}
+
+ul {
+  text-align: left;
+}
+h3 {
+  text-align: left;
+  padding-left: 5px;
 }
