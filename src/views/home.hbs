@@ -1,19 +1,34 @@
-<form action="/feedback" method="POST">
-    <label for="name">Name: <input type="text" name="name" id="name" required></label>
+<main>
+    <form action="/feedback" method="POST">
+        <label for="name">Name: <input type="text" name="name" id="name" required></label>
 
-    <label for="gym-name">What gym you train at ? <input type="text" name="gym" id="gym-name" required></label>
-    <label for="duration">How long is your workout ?
-        <input list="duration" name="duration" required>
-        <datalist id="duration">
-            <option value="">
-            <option value="Short">
-            <option value="Medium">
-            <option value="Long ">
-            <option value="Really long">
+        <label for="gym">What gym you train at ? <input list="gym" name="gym" required>
+            <datalist id="gym">
+                <option value="">
+                <option value="Pure Gym">
+                <option value="The Gym Group">
+                <option value="Virgin Gym">
+                <option value="Fit4Less">
+                <option value="Local Leisure Center">
+                <option value="Local Park">
+                <option value="Other">
 
-        </datalist></label>
-    <label for="exercise">What is your favourite exercise: <input type="text" name="exercise" id="exercise"
-            required></label>
+            </datalist></label>
 
-    <button type="submit">Submit</button>
-</form>
+        <label for="duration">How long is your workout ?
+            <input list="duration" name="duration" required>
+            <datalist id="duration">
+                <option value="">
+                <option value="Short">
+                <option value="Medium">
+                <option value="Long ">
+                <option value="Really long">
+
+            </datalist></label>
+        <label for="exercise">What is your favourite exercise: <input type="text" name="exercise" id="exercise"
+                required></label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</main>

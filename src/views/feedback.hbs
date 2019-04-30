@@ -1,12 +1,16 @@
-<h2>Thank you {{name}}, for posting your feedback</h2>
+<main>
 
-<br>
+    <h2>Thank you {{name}}, we have received your feedback.</h2>
 
 
-<h3>Your feedback information</h3>
-<ul>
-    <li>Feedback no: {{id}}</li>
-    <li>Gym: {{gym}}</li>
-    <li>Duration: {{duration}}</li>
-    <li>Favourite exercise: {{exercise}}</li>
-</ul>
+    <h3>This is the information you have provided</h3>
+    <ul>
+        <li>Feedback no: {{id}}</li>
+        <li>Gym: {{gym}}</li>
+        <li>Duration: {{duration}}</li>
+        <li>Favourite exercise: {{exercise}}</li>
+    </ul>
+
+    <div><a href="/delete/{{name}}">delete feedback</a></div>
+
+</main>

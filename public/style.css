@@ -1,16 +1,25 @@
 body {
   background: #778899;
   font-family: Verdana;
+  color: #cef282;
 }
 
 nav {
+  background: #383f51;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-img {
-  height: 1em;
+
+main {
+  min-width: 250px;
+  border: solid black 5px;
 }
+
+img {
+  height: 1.2em;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -22,9 +31,7 @@ a:hover {
 
 form {
   margin: 50px auto;
-  /* width: 25em
-  ; */
-  border: solid black 1px;
+  /* border: solid black 1px; */
   display: flex;
   flex-direction: column;
 }
@@ -33,6 +40,37 @@ label {
   text-align: right;
   width: 35em;
 }
+input[type="text"] {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  background: transparent;
+}
+
+input[list] {
+  border: 0 0 5px solid black 0;
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  background: transparent;
+}
+
+input:hover,
+input:valid {
+  border-bottom: 1px solid #cef282;
+  color: #cef282;
+}
+
+/* input[list],
+input[type="text"]:after {
+  border-bottom: 1px solid #cef282;
+} */
 
 button {
   width: 10vw;
@@ -41,4 +79,16 @@ button {
 
 header {
   text-align: center;
+}
+
+footer {
+  padding-top: 1em;
+}
+
+p img:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  color: #cef282;
 }

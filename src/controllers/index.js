@@ -9,7 +9,7 @@ const feedbackHistory = require("./feedbackhistory");
 const error = require("./error.js");
 
 router.get("/", home);
-router.get("/feedbackhistory/:reviewerName", feedbackHistory);
+router.get("/feedbackhistory/:name", feedbackHistory);
 router.post("/feedback", feedback);
 
 module.exports = router;
