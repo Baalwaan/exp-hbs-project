@@ -57,7 +57,7 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="text"] {
+input[type='text'] {
   border: 0;
   outline: 0;
   background: transparent;
@@ -107,4 +107,20 @@ ul {
 h3 {
   text-align: left;
   padding-left: 5px;
+}
+
+button {
+  background: #383f51;
+  color: #cef282;
+  border-radius: 5%;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+button {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.8);
 }
