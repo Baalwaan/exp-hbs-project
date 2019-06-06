@@ -7,7 +7,7 @@ const postQuery = (name, gym, duration, exercise) => {
       [name, gym, duration, exercise]
     )
     .then(response => response.rows)
-    .catch((err = console.log('Error: ', err)));
+    .catch(err => console.log('Error: ', err));
 };
 
 module.exports = postQuery;
