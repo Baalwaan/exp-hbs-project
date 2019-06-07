@@ -1,10 +1,14 @@
-// const deleteQuery = require("../model/queries/deletefeedback");
+const deleteQuery = require('../model/queries/deletefeedback');
 
-// const deleteFeedback = (req, res) => {
-//   deleteQuery().then(response => {
-//     console.log("this is >>>>>", reponse);
-//     res.render("deletefeedback", { boolean: response[0] });
-//   });
-// };
+const deleteFeedback = (req, res) => {
+  const { id } = req.params;
+  console.log(req.body);
+  console.log('this is id ', id);
 
-// module.exports = deleteFeedback;
+  deleteQuery(id).then(response => {
+    console.log('this is >>>>>', response);
+    res.render('deletefeedback', { id: id });
+  });
+};
+
+module.exports = deleteFeedback;

@@ -3,14 +3,20 @@
 
     {{#if arr}}
     {{#each arr}}
-    <ul>
+    <form action="/delete-record={{id}}" onsubmit="return anchorLink()" method="post">
+        <ul>
 
-        <li>id: {{id}}</li>
-        <li>Gym: {{gym_name}}</li>
-        <li>Duration: {{workout_duration}}</li>
-        <li>Favourite exercise: {{favourite_workout}}</li>
-        <button name={{id}}>Delete Feedback</button>
-    </ul>
+            <li>id: {{id}}</li>
+            <li>Gym: {{gym_name}}</li>
+            <li>Duration: {{workout_duration}}</li>
+            <li>Favourite exercise: {{favourite_workout}}</li>
+            <button class="delete-buttons" name={{id}} onclick="return anchorLink">Delete Feedback</button>
+
+
+        </ul>
+
+
+    </form>
     {{/each}}
 
     {{else}}
