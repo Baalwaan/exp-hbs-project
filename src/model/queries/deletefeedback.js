@@ -1,7 +1,10 @@
-// const db = require("../db_connection");
+const db = require('../db_connection');
 
-// const deleteFeedback = name => {
-//   return db.query("delete from gym ORDER BY id DESC limit 1").then(() => true);
-// };
+const deleteFeedback = idNumber => {
+  return db
+    .query('DELETE FROM gym WHERE id=$1', [idNumber])
+    .then(response => response.rows[0])
+    .catch(err => console.log('Error: ', err));
+};
 
-// module.exports = deleteFeedback;
+module.exports = deleteFeedback;
